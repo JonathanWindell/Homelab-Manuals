@@ -143,8 +143,8 @@ In your AdGuard Home or Pi-hole web interface, find the section for "DNS Rewrite
 The most efficient method is to use a wildcard record. This single rule will cover proxmox., jellyfin., and any other service you add in the future.
 
 - Create a new DNS record:
-    - **Domain:** *.jonathans-labb.org
-    - **IP Address:** 100.89.67.32 (The **Tailscale IP of your Nginx Proxy Manager container**)
+    - **Domain:** `*.<your-domain.com>`
+    - **IP Address:** `<NPM_TAILSCALE_IP>` (The **Tailscale IP of your Nginx Proxy Manager container**)
 
 This rule tells your local DNS server: "Any request for a subdomain of jonathans-labb.org should be answered with the IP address of the NPM proxy."
 
@@ -156,7 +156,7 @@ Now, you must instruct your entire Tailscale network to use your new DNS server 
 2. Under the **Nameservers** section, click Add nameserver.
 3. Select the **"Custom"** option and enter the **Tailscale IP of your AdGuard/Pi-hole container**.
 4. After adding the nameserver, a toggle for **"Restrict to search domain (Split DNS)"** will appear. **Enable this toggle.**
-5. In the text box that appears, enter your private domain: jonathans-labb.org.
+5. In the text box that appears, enter your private domain: `<your-domain.com>`
 
 Your configuration should look like this:
 
@@ -165,7 +165,7 @@ This tells every device on your Tailnet: "For any address ending in .jonathans-l
 #### 5.6.4. Step 4: Cleanup and Verification
 
 1. **Remove the custom entries** you previously added to the hosts file on your Windows desktop, laptop, and any other clients. They are no longer needed and can cause conflicts. You may need to flush your computer's DNS cache (ipconfig /flushdns in Windows Command Prompt) or restart your browser.
-2. **Verify:** From any device connected to your Tailnet, you should now be able to access https://proxmox.jonathans-labb.org, https://truenas.jonathans-labb.org, etc., without any local configuration. The name resolution is now handled centrally and automatically for your entire private network.
+2. **Verify:** From any device connected to your Tailnet, you should now be able to access `https://proxmox.<your-domain.com>`, etc., without any local configuration. The name resolution is now handled centrally and automatically for your entire private network.
     
 ## 6. Final Root Cause Summary
 
