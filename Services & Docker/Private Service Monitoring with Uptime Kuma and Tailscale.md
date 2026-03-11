@@ -91,7 +91,7 @@ Use the Proxmox VE Helper Scripts from the Proxmox host for a seamless installat
 2. Click "Add New Monitor" and select HTTP(s).
 3. **Friendly Name:** Enter a descriptive name, e.g., TrueNAS Web UI.
 4. **URL:** Enter the full, secure custom domain for the service.
-    - Example: https://proxmox.jonathans-labb.org
+    - Example: `https://proxmox.<your-domain.com>`
 
 ### 5.2. Step 2: Configure Certificate Expiry Monitoring
 

@@ -72,8 +72,8 @@ services:
       - OPENVPN_USER=YOUR_PIA_USERNAME_HERE
       - OPENVPN_PASSWORD=YOUR_PIA_PASSWORD_HERE
       - VPN_PORT_FORWARDING=on
-      - SERVER_REGIONS=Sweden
-      - TZ=Europe/Stockholm
+      - SERVER_REGIONS=<YOUR_PREFERRED_REGION>
+      - TZ=<YOUR_TIMEZONE>
     volumes:
       - ./gluetun-data:/gluetun
     restart: unless-stopped
@@ -85,7 +85,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=Europe/Stockholm
+      - TZ=<YOUR_TIMEZONE>
       - WEBUI_PORT=8080
     volumes:
       - ./qb-config:/config

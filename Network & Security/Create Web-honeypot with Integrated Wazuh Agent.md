@@ -66,7 +66,7 @@ To make the honeypot visible to the internet, you must forward a "tempting" port
 In the UniFi Network interface, create a **Port Forwarding** rule:
 - **Name:** Raspberry Pi - Web Honeypot
 - **WAN Port:** 8081
-- **Forward IP:** 192.168.20.22 (IP of the Raspberry Pi)
+- **Forward IP:** Forward IP: `<RASPBERRY_PI_IP>`
 - **Forward Port:** 8080
 - **Protocol:** TCP
 
@@ -82,7 +82,7 @@ The agent must be told to monitor the Nginx access log.
 ```xml
 <localfile>
   <log_format>apache</log_format>
-  <location>/home/jonathanwindell/web-honeypot/logs/access.log</location>
+  <location>/home/<your-username>/web-honeypot/logs/access.log</location>
 </localfile>
 ```
 

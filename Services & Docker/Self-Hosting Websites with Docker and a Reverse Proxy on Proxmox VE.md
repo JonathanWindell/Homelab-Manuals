@@ -136,7 +136,7 @@ The syntax `- "/opt/docker-projects/my-website:/usr/share/nginx/html:ro"` means:
     
     `docker compose up -d`
     
-Your website is now running in a container, accessible on your local network at `http://192.168.0.110:8081`.
+Your website is now running in a container, accessible on your local network at `http://<DOCKER_HOST_IP>:8081`.
 
 ### 5.4. Step 4: Configure the Reverse Proxy (NPM)
 
@@ -185,7 +185,7 @@ Now that your router is forwarding all traffic to NPM, we must tell NPM what to 
 3. Fill in the fields:
     - **Domain Names:** `portfolio.your-domain.com`
     - **Scheme:** `http`
-    - **Forward Hostname / IP:** `192.168.0.110` **(HERE, you enter the IP address of your** `**docker-host**` **container)**, as this is where your portfolio service is actually running.
+    - **Forward Hostname / IP:** `<DOCKER_HOST_IP>` **(HERE, you enter the IP address of your** `**docker-host**` **container)**, as this is where your portfolio service is actually running.
     - **Forward Port:** `8081` (The unique port you exposed for this specific service in your `docker-compose.yml` file).
     - **SSL Tab:** Go to the SSL tab, select `Request a new SSL Certificate` (if it's the first time), and enable `Force SSL`.
     - **Access List:** Ensure it is set to "Publicly Accessible".
