@@ -29,5 +29,10 @@ To get the most out of these guides, it is recommended that you have:
 * Docker and Docker Compose installed for the service-related guides.
 * Administrative access to your network routing equipment.
 
+## Author
+I'm Jonathan, and I develop projects in my spare time that help myself and others become better and more efficient developers!
+* [LinkedIn](https://www.linkedin.com/in/jonathan-windell-418a55232/)
+* [Portfolio](https://portfolio.jonathans-labb.org/)
+
 ## License
 This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/). You are free to share and adapt the material, provided you give appropriate credit and distribute your contributions under the same license.
