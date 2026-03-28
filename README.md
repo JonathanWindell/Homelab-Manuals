@@ -8,19 +8,19 @@ These guides are designed to serve as universal templates. Whether you are deplo
 ## Index of Guides
 
 ### Network & Security
-* [Secure Homelab Access with Tailscale and Nginx Proxy Manager](./network/secure-access-tailscale-npm.md)
-* [Configuring a VLAN-based Firewall Switch](./network/vlan-switch-configuration.md)
-* [Creating a Web-Honeypot with Integrated Wazuh Agent](./network/web-honeypot-wazuh.md)
+* [Secure Homelab Access with Tailscale and Nginx Proxy Manager](https://github.com/JonathanWindell/Homelab-Manuals/blob/main/Network%20%26%20Security/Secure%20Homelab%20Access%20with%20Tailscale%20and%20Nginx%20Proxy%20Manager.md)
+* [Configuring a VLAN-based Firewall Switch](https://github.com/JonathanWindell/Homelab-Manuals/blob/main/Network%20%26%20Security/Configuring%20a%20UniFi%20Switch%20for%20a%20VLAN-based%20Firewall.md)
+* [Creating a Web-Honeypot with Integrated Wazuh Agent](https://github.com/JonathanWindell/Homelab-Manuals/blob/main/Network%20%26%20Security/Create%20Web-honeypot%20with%20Integrated%20Wazuh%20Agent.md)
 
 ### Infrastructure & Proxmox VE
-* [Emergency Migration from a Failing Host Disk](./infrastructure/emergency-disk-migration.md)
-* [Backing Up to an External USB Drive](./infrastructure/external-usb-backup.md)
-* [Stable & Automated LXC Container Backups](./infrastructure/automated-lxc-backups.md)
+* [Emergency Migration from a Failing Host Disk](https://github.com/JonathanWindell/Homelab-Manuals/blob/main/Infrastructure%20%26%20Proxmox%20VE/Emergency%20Migration%20from%20a%20Failing%20Proxmox%20VE%20Host%20Disk.md)
+* [Backing Up to an External USB Drive](https://github.com/JonathanWindell/Homelab-Manuals/blob/main/Infrastructure%20%26%20Proxmox%20VE/Backing%20Up%20to%20an%20External%20USB%20Drive.md)
+* [Stable & Automated LXC Container Backups](https://github.com/JonathanWindell/Homelab-Manuals/blob/main/Infrastructure%20%26%20Proxmox%20VE/Stable%20%26%20Automated%20LXC%20Container%20Backups%20in%20Proxmox%20VE.md)
 
 ### Services & Docker
-* [Self-Hosting Websites with Docker and a Reverse Proxy](./services/self-hosting-websites.md)
-* [Private Service Monitoring with Uptime Kuma and Tailscale](./services/uptime-kuma-monitoring.md)
-* [Secure Torrenting Appliance with Docker](./services/secure-torrenting-vpn.md)
+* [Self-Hosting Websites with Docker and a Reverse Proxy](https://github.com/JonathanWindell/Homelab-Manuals/blob/main/Services%20%26%20Docker/Self-Hosting%20Websites%20with%20Docker%20and%20a%20Reverse%20Proxy%20on%20Proxmox%20VE.md)
+* [Private Service Monitoring with Uptime Kuma and Tailscale](https://github.com/JonathanWindell/Homelab-Manuals/blob/main/Services%20%26%20Docker/Private%20Service%20Monitoring%20with%20Uptime%20Kuma%20and%20Tailscale.md)
+* [Secure Torrenting Appliance with Docker](https://github.com/JonathanWindell/Homelab-Manuals/blob/main/Services%20%26%20Docker/Secure%20Torrenting%20Appliance%20with%20Docker.md)
 
 ## Prerequisites
 To get the most out of these guides, it is recommended that you have:
